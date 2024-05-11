@@ -1,0 +1,108 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(calculatorgb1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* backdrop-filter: blur(10px); */
+}
+
+form {
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 1),
+    inset 2px 2px 2px rgba(255, 255, 255, 0.2),
+    inset -2px -2px 3px rgba(255, 255, 255, 0.1),
+    -2px -2px 3px rgba(255, 255, 255, 0.1);
+  /* background-color: #ffffff00; */
+  backdrop-filter: blur(40px);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 20px;
+  /* border: 1px solid #ffffff; */
+  border-radius: 10px;
+}
+.inputbnt_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 15px;
+}
+.input_groups {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+input {
+  width: 60px;
+  height: 60px;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  cursor: pointer;
+  border-radius: 5px;
+  /* border: 1px solid transparent; */
+  background: transparent;
+  color: #ffffff;
+  position: relative;
+  outline: none;
+  padding: 5px 10px;
+  box-shadow: 2px 2px 3px rgba(255, 255, 255, 0.1),
+    inset 2px 2px 2px rgba(255, 255, 255, 0.2),
+    inset -2px -2px 3px rgba(255, 255, 255, 0.1),
+    -2px -2px 3px rgba(255, 255, 255, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: right;
+}
+input::after {
+  position: absolute;
+  content: "";
+  width: 0.15em;
+  height: 8em;
+  left: 28%;
+  top: 50%;
+  background-color: white;
+  border-radius: 1em;
+}
+input::before {
+  position: absolute;
+  content: "";
+  display: block;
+  box-sizing: border-box;
+  width: 4em;
+  height: 8.2em;
+  left: 48%;
+  top: 50%;
+  border-radius: 2em;
+  border: 0.15em solid white;
+  box-shadow: inset 0 0 0 2px tomato, inset 0 0 10px 3px tomato,
+    inset 10px 7px 0.1em rgba(0, 0, 0, 0.6), 0 0 0 0.1em tomato,
+    0 0 10px 0.2em tomato, 0.1em 0.1em 0.1em rgba(0, 0, 0, 0.1);
+}
+
+.display {
+  display: flex;
+}
+.display input {
+  flex: 1;
+}
+
+.zerobtn {
+  width: 137px;
+}
